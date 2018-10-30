@@ -13,7 +13,6 @@ module.exports = (app) => {
     })
 //Get one book
     app.get('/api/readinglist/:id', (req, res) => {
-        console.log(req.params.id)
         readingList.findOne(req.params.id)
         res.sendStatus(200)
     })

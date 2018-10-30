@@ -1,5 +1,5 @@
 const React = require('react')
-const Nav = require('./components/nav')
+const Nav = require('./components/nav')('nav-item active', 'nav-item')
 const Form = require('./components/form')
 
 const Index = () =>

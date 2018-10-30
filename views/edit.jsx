@@ -13,7 +13,7 @@ const Edit = props =>
         <Nav />
         <div className='container'>
             <div className='jumbotron'>
-                <h1 className='text-center'><span className='fa fa-book' /> Reading List</h1>
+                <h1 className='text-center'><span className='fa fa-book' /> Reading List Update</h1>
                 <hr />
                 <h2 className='text-center'>Please update the information below</h2>
             </div>
@@ -21,32 +21,32 @@ const Edit = props =>
             <div className="row">
                 <div className="col">
                 <label htmlFor="bookTitle">Title</label>
-                <input type="text" className="form-control" value={props.title} />
+                <input id='title' type="text" className="form-control" value={props.title} required/>
                 </div>
                 <div className="col">
                 <label htmlFor="bookAuthor">Author</label>
-                <input type="text" className="form-control" value={props.author} />
+                <input id='author' type="text" className="form-control" value={props.author} required />
                 </div>
             </div>
             <div className="row mt-4">
                 <div className="col">
-                <label htmlFor="pageCount">Total Page Count</label>
-                <input type="text" className="form-control" value={props.pages} />
+                <label htmlFor="pages">Total Page Count</label>
+                <input id='pages' min='1' type="number" className="form-control" value={props.pages} required/>
                 </div>
                 <div className="col">
                 <label htmlFor="currentPage">Current Page Number</label>
-                <input type="text" className="form-control" value={props.currentPage} />
+                <input id='currentPage' min='0' type="text" className="form-control" value={props.currentPage} required/>
                 </div>
             </div>
             <div className="row mt-4">
                 <div className="col">
-                <input type="checkbox" id="readCheck" checked={props.isRead} />
+                <input type="checkbox" id="isRead" checked={props.isRead}/>
                 <label htmlFor="readCheck">
                     I've read this book
                 </label>
                 </div>
             </div>
-            <button type="submit" className="btn btn-primary">Submit Changes</button>
+            <button id='submitChange' data-id={props.id} type="submit" className="btn btn-primary">Submit Changes</button>
             </form>   
         </div>
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossOrigin="anonymous" />

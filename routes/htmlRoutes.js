@@ -8,7 +8,7 @@ module.exports = (app) => {
         res.render('list', {list: readingList.findAll()})
     })
     app.get('/edit', (req, res) => {
-        res.render('edit', readingList.findOne())
+        res.render('edit', readingList.getOne())
       })
 
 }

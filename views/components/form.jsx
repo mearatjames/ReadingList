@@ -5,21 +5,21 @@ const Form = () =>
   <div className="row">
     <div className="col">
     <label htmlFor="bookTitle">Title</label>
-      <input id='title' type="text" className="form-control" placeholder="The Little Prince" />
+      <input id='title' type="text" className="form-control" placeholder="The Little Prince" required />
     </div>
     <div className="col">
     <label htmlFor="bookAuthor">Author</label>
-      <input id='author' type="text" className="form-control" placeholder="Author" />
+      <input id='author' type="text" className="form-control" placeholder="Author" required/>
     </div>
   </div>
   <div className="row mt-4">
     <div className="col">
     <label htmlFor="pages">Total Page Count</label>
-      <input id='pages' type="number" className="form-control" placeholder="120" />
+      <input id='pages' min='1' type="number" className="form-control" placeholder="120" required/>
     </div>
     <div className="col">
     <label htmlFor="currentPage">Current Page Number</label>
-      <input id='currentPage' type="text" className="form-control" placeholder="15" />
+      <input id='currentPage' min='0' type="number" className="form-control" placeholder="15" required/>
     </div>
   </div>
   <div className="row mt-4">

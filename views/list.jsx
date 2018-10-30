@@ -1,5 +1,5 @@
 const React = require('react')
-const Nav = require('./components/nav')
+const Nav = require('./components/nav')('nav-item', 'nav-item active')
 const Card = require('./components/card')
 
 const List = props => 
