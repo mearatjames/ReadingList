@@ -3,7 +3,7 @@ const path = require('path')
 const app = express()
 const bodyparser = require('body-parser')
 
-let PORT = process.env.PORT || 3000
+let PORT = process.env.PORT || 3005
 
 app.set('views', path.join(__dirname, 'views'))
 app.set('view engine', 'jsx')
