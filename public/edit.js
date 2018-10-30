@@ -13,7 +13,6 @@ document.querySelector('#submitChange').addEventListener('click', event => {
       })
     })
       .then(r => {
-        console.log(r)
         window.location = './list'
       })
       .catch(e => console.error(e))

@@ -13,7 +13,6 @@ document.getElementById('add').addEventListener('click', event => {
       })
     })
       .then(r => {
-        console.log(r)
         document.querySelector('#title').value = ''
         document.querySelector('#author').value = ''
         document.querySelector('#pages').value = ''
